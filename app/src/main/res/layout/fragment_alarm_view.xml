@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.heallife.duchv.ouralarm.ui.fragment.AlarmView">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/background_material_light">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alarms_no_alarms"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:id="@+id/alarm_top"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/abc_action_button_min_height_material"
+            android:id="@+id/bottom_menu_top"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/abc_action_bar_default_padding_material"
+            android:background="@color/background_bottom_bar_material">
+            <ImageButton
+                android:layout_width="@dimen/abc_action_button_min_height_material"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_action_add_alarm"
+                android:background="@color/background_bottom_bar_material"
+                android:id="@+id/add_alarm"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </View>
+            <ImageButton
+                android:layout_width="@dimen/abc_action_button_min_height_material"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="@color/background_bottom_bar_material"
+                android:id="@+id/remove_alarm"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_top"
+            android:layout_above="@+id/bottom_menu_top"
+            android:id="@+id/alarm_list"
+            android:dividerHeight="1dip">
+        </ListView>
+
+    </RelativeLayout>
+
+</FrameLayout>

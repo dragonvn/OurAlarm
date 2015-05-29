@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alarm_item_height"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:id="@+id/alarm_item_time"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:id="@+id/alarm_item_message"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/repeat_all"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:gravity="center_vertical"
+                android:id="@+id/alarm_item_repeat"/>
+        </LinearLayout>
+        <Switch
+            style="@style/Base.TextAppearance.AppCompat.Widget.Switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/alarm_item_switch"
+            android:focusable="false"/>
+    </LinearLayout>
+
+</LinearLayout>

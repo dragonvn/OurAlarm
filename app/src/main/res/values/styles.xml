@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AlertDialogCustom" parent="android:Widget">
+        <item name="android:textColor">@color/background_bottom_bar_material</item>
+        <item name="android:titleTextStyle">@style/WidgetTitle</item>
+        <item name="android:positiveButtonText">@style/ButtonText</item>
+
+    </style>
+
+
+    <style name="WidgetTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/background_bottom_bar_material</item>
+    </style>
+    <style name="ButtonText" parent="RtlOverlay.Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:textColor">@color/background_bottom_bar_material</item>
+    </style>
+
+
+
+
+    <style name="MyAppTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+
+            <item name="android:textColor">@color/background_bottom_bar_material</item>
+            <item name="android:titleTextStyle">@style/WidgetTitle</item>
+            <item name="android:positiveButtonText">@style/ButtonText</item>
+             <!--Any customizations for your app running on 4.0+ devices here -->
+    </style>
+
+    <style name="ContactEditText" parent="@android:style/Widget.DeviceDefault.EditText">
+        <item name="android:height">32dp</item>
+        <item name="android:maxWidth">150dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/abc_primary_text_material_light</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:spacing">4dp</item>
+    </style>
+
+</resources>
